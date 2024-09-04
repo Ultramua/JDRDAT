@@ -19,7 +19,7 @@ parser.add_argument('--dropout_rate', type=float, default=0.25, metavar='LR')
 parser.add_argument('--input_size', type=tuple, default=(1, 62, 500))
 parser.add_argument('--learning_rate', type=float, default=0.0001, metavar='LR',
                     help='learning rate (default: 0.0001)')
-parser.add_argument('--max_epoch', type=int, default=200, metavar='N',
+parser.add_argument('--max_epoch', type=int, default=100, metavar='N',
                     help='how many epochs')
 parser.add_argument('--no-cuda', action='store_true', default=False,
                     help='disables CUDA training')
