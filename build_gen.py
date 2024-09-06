@@ -1,5 +1,5 @@
 import svhn2mnist
-from Feature_network import *
+from HGLEnet import *
 
 
 def Generator(device,num_class, input_size, sampling_rate, num_T,
