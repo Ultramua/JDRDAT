@@ -84,5 +84,6 @@ class Predictor(nn.Module):
     def forward(self, x, reverse=False):
         if reverse:
             x = grad_reverse(x, self.lambd)
+        # x = F.relu(self.bn2_fc(self.fc2(x)))
         x = F.relu(self.bn_fc3(self.fc3(x)))
         return x
